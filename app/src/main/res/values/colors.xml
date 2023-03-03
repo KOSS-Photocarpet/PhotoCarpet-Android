@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="BrightGray">#D1D1D1</color>
+    <color name="google_color">#EDEDED</color>
+    <color name="kakao_color">#FFE500</color>
+    <color name="naver_color">#07AA0D</color>
+    <color name="facebook_color">#3D60E1</color>
 </resources>
