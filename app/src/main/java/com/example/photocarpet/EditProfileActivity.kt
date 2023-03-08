@@ -55,6 +55,11 @@ class EditProfileActivity : AppCompatActivity() {
             intent.type = "image/*"
             requestGallerLauncher.launch(intent)
         }
+
+        binding.btnRegistProfile.setOnClickListener{
+            val intent = Intent(this, MainHomeActivity::class.java)
+            startActivity(intent)
+        }
     }
     private fun calculateInSampleSize(fileUri: Uri, reqWidth: Int, reqHeight: Int): Int {
         val options = BitmapFactory.Options()
