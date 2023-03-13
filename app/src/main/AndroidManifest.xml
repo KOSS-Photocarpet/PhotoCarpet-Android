@@ -15,6 +15,13 @@
         android:theme="@style/Theme.PhotoCarpet"
         tools:targetApi="31">
         <activity
+            android:name=".MyPageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="false">
             <meta-data
@@ -34,8 +41,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".EditProfileActivity"></activity>
-        <activity android:name=".MainHomeActivity"></activity>
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".MainHomeActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

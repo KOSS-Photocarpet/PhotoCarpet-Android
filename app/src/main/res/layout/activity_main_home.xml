@@ -4,59 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainHomeActivity"
-    android:background="@color/black"
-    >
+    tools:context=".MainHomeActivity">
 
     <LinearLayout
-        android:layout_width="403dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="10">
 
         <TextView
-            android:textStyle="bold"
-            android:layout_width="248dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:paddingLeft="30dp"
             android:text="PhotoCarpet"
             android:textColor="@color/white"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <android.widget.Button
-            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:layout_gravity="end"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
             android:background="@drawable/btn_search_white" />
 
         <android.widget.Button
-            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:layout_gravity="end"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
             android:background="@drawable/btn_my_exhibition" />
 
         <android.widget.Button
+            android:id="@+id/btn_my_page"
+            android:layout_weight="0.2"
             android:layout_marginRight="10dp"
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:layout_gravity="end"
+            android:layout_gravity="center"
             android:background="@drawable/btn_my_page"/>
 
     </LinearLayout>
 
     <android.widget.Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_add_exhibition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
